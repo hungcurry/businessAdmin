@@ -6,9 +6,19 @@
 html {
   font-size: 14px;
 }
-/* .main {
-  min-height: calc(100vh - (49px + 49px + 42px +14px));
-} */
 .table{
   min-width: 640px;
+}
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.main{
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
 }
