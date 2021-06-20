@@ -1,6 +1,6 @@
 
 *{
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 html {
@@ -9,3 +9,6 @@ html {
 /* .main {
   min-height: calc(100vh - (49px + 49px + 42px +14px));
 } */
+.table{
+  min-width: 640px;
+}

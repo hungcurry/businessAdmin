@@ -32,7 +32,7 @@
     </div>
   </nav>
   <!-- message -->
-  <div class="container mt-4 main">
+  <div class="container-fluid mt-4 main">
     <div class="row mb-4">
       <div class="col-6 col-lg-3">
         <div class="card rounded-0 h-100">
@@ -79,10 +79,228 @@
         </div>
       </div>
     </div>
+    <div class="row mb-4">
+      <div class="col-lg-4">
+        <div class="card rounded-0 h-100">
+            <div class="card-body">
+                <div class="text-center">
+                  <div class="h5">目前上線人數</div>
+                  <div class="display-4">99</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45"
+                      aria-valuemin="0" aria-valuemax="100">桌機</div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 55%"
+                      aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">行動裝置</div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card rounded-0 h-100">
+            <div class="card-header">新進訂單</div>
+            <div class="card-body overflow-auto">
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-outline-secondary">訂單管理</button>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                          <th scope="col">來源</th>
+                          <th scope="col">姓名</th>
+                          <th scope="col">貨品</th>
+                          <th scope="col" with="100" class="text-right">價格</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>Youtube</td>
+                          <td>喜多郎</td>
+                          <td>六角和牛排</td>
+                          <td class="text-right">3,000</td>
+                        </tr>
+                        <tr>
+                          <td>Youtube</td>
+                          <td>喜多郎</td>
+                          <td>六角喜餅</td>
+                          <td class="text-right">2,000</td>
+                        </tr>
+                        <tr>
+                          <td>Youtube</td>
+                          <td>喜多郎</td>
+                          <td>六角雞胸</td>
+                          <td class="text-right">1,500</td>
+                        </tr>
+                        <tr>
+                          <td>Youtube</td>
+                          <td>喜多郎</td>
+                          <td>六角可愛 T Shirt</td>
+                          <td class="text-right">2,000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="justify-content-end">
+                          <td colspan="3" class="text-right">總營收</td>
+                          <td class="text-right">10,500</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-
-
+  <!-- chart -->
+  <div class="container-fluid mb-4">
+    <div class="row">
+      <section class="col-lg-8">
+        <div class="card rounded-0">
+          <div class="card-header">用戶來源</div>
+          <div class="card-body">
+            <div class="row d-flex align-items-center">
+              <div class="col-lg-8">
+                <canvas id="barCanvas"></canvas>
+              </div>
+              <div class="col-lg-4">
+                <h4>Detail</h4>
+                <p>網通指定成績尤其是而是，物品吸引立刻清除畢業首次突出違反特別不夠簽名，正是得分您現在妻子網際網路態度開發商說話，深深徹底初音就好在這裡交易麻煩意見鍵盤異常體力國內級別輸出，評價某些尤其點擊上網輸出增強夢幻山西實業，接觸鄉民設置定義咱們說到總算類別桃園今年，依然工程師問題本類成了加大理解試試一款不停他說詳細文件大小，房地產的人經濟發展定位，這麼多許多作戰出生機票如果你，深刻如有任何人曾經全球辦法這款精美尤其地上，簡單手機我有冠軍於是，怪物藝術指數電器地說在這裡報告考試本地授權問道驚人經歷普通，組。</p>
+                <h6 class="mt-3">Google來源</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6 class="mt-3">Facebook</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6 class="mt-3">無法追蹤來源</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="col-lg-4">
+        <div class="card rounded-0 h-100">
+          <div class="card-header">小標題</div>
+          <div class="card-body d-flex align-items-center">
+            <canvas class="chart-item"></canvas>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- table group -->
+  <div class="container-fluid">
+    <div class="card rounded-0">
+      <div class="card-header">
+        表頭
+      </div>
+      <div class="card-body overflow-auto">
+        <div class="d-flex w-100">
+          <div class="form-inline">
+            <div class="form-group">
+                <label for="month" class="sr-only">月份</label>
+                <select name="" id="month" class="form-control form-control-sm">
+                  <option value="9">9月</option>
+                  <option value="10">10月</option>
+                  <option value="11">11月</option>
+                  <option value="12">12月</option>
+                </select>
+            </div>
+            </div>
+            <div class="ms-auto">
+              <a href="#" class="btn btn-outline-secondary btn-sm">下載表單</a>
+              <a href="#" class="btn btn-outline-secondary btn-sm">訂單管理</a>
+            </div>
+        </div>
+        <!-- table -->
+        <table class="table table-responsive mb-0">
+          <thead>
+              <tr>
+                <th width="50">日期</th>
+                <th width="15%">訂單數</th>
+                <th width="15%">退費數</th>
+                <th width="15%">出貨數</th>
+                <th width="15%">有問題貨品</th>
+                <th width="250" class="text-right">營業額</th>
+                <th width="250" class="text-right">淨利潤</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td>9/1</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+              <tr>
+                <td>9/2</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td class="text-right">
+                <td class="text-right">168,000</td class="text-right">
+              </tr>
+              <tr>
+                <td>9/3</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td class="text-right">
+                <td class="text-right">168,000</td class="text-right">
+              </tr>
+              <tr>
+                <td>9/4</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+              <tr>
+                <td>9/5</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+              <tr>
+                <td>9/6</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+          </tbody>
+          <tfoot>
+              <tr>
+                  <td colspan="6" class="text-right">月總營收</td>
+                  <td class="text-right">3,750,500</td>
+              </tr>
+              <tr>
+                  <td colspan="6" class="text-right">月總淨利潤</td>
+                  <td class="text-right">2,140,500</td>
+              </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+  <footer class="mt-5 py-3 bg-light text-secondary text-center">
+    咖哩電商 後台管理系統
+  </footer>
 
 
 
